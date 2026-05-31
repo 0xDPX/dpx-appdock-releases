@@ -1,9 +1,9 @@
-{
+﻿{
     "version":  "1.0.0",
     "releaseDate":  "2026-05-31",
-    "releaseNotes":  "First public release. See releases/NOTES-1.0.0.md for details.",
+    "releaseNotes":  "Smaller installer with bundled .NET 8 Desktop Runtime prerequisite, framework-dependent app build, and improved setup UI.",
     "downloadUrl":  "https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.0/DPX.AppDock-1.0.0-win-x64.zip",
     "mandatory":  false,
-    "sha256":  "a3d62aae455604f3b50357a3d88ac23dfa77ca69537b8b2dfcd6dbd67793c010"
+    "sha256":  "b36420732bf8f0dd96a93d4b664c2fa85ee8c73e60749315152b5e0c856f2bd0"
 }
 
