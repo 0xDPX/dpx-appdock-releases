@@ -1,8 +1,8 @@
 {
-    "version":  "1.0.1",
+    "version":  "1.0.2",
     "releaseDate":  "2026-05-31",
-    "releaseNotes":  "Test in-app update.",
-    "downloadUrl":  "https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.1/DPX.AppDock-1.0.1-win-x64.zip",
+    "releaseNotes":  "Update progress UI.",
+    "downloadUrl":  "https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.2/DPX.AppDock-1.0.2-win-x64.zip",
     "mandatory":  false
 }
 
