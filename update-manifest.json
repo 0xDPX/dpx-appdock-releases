@@ -1,8 +1,9 @@
 {
     "version":  "1.0.0",
     "releaseDate":  "2026-05-31",
-    "releaseNotes":  "Initial release.",
+    "releaseNotes":  "First public release. See releases/NOTES-1.0.0.md for details.",
     "downloadUrl":  "https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.0/DPX.AppDock-1.0.0-win-x64.zip",
-    "mandatory":  false
+    "mandatory":  false,
+    "sha256":  "a3d62aae455604f3b50357a3d88ac23dfa77ca69537b8b2dfcd6dbd67793c010"
 }
 
