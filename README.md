@@ -1,34 +1,52 @@
-# DPX AppDock — Windows releases
+# DPX AppDock releases
 
-Public download page for [DPX AppDock](https://dpx-labs.com/appdock), a Windows dock for launching apps, folders, files, and web shortcuts.
+Public update feed for **DPX AppDock** (source code is maintained in a private repository).
 
-This repo holds the installer builds and the update manifest the app checks for new versions. Source code is not published here.
+This repo contains **no application source code** — only installers, update packages, and the manifest the app checks for new versions.
 
 ## Download
 
-**Latest:** [DPX AppDock v1.0.0](https://github.com/0xDPX/dpx-appdock-releases/releases/latest)
-
-| File | Use |
+| File | Purpose |
 | --- | --- |
-| `DPX.AppDock-{version}-setup.exe` | First-time install (recommended) |
-| `DPX.AppDock-{version}-win-x64.zip` | In-app updates only |
+| [DPX.AppDock-1.0.0-setup.exe](https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.0/DPX.AppDock-1.0.0-setup.exe) | First-time install (Windows 10/11, x64) |
+| [DPX.AppDock-1.0.0-win-x64.zip](https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.0/DPX.AppDock-1.0.0-win-x64.zip) | In-app update package (used by existing installs) |
 
-## Requirements
+**Requirements:** Windows 10 or 11 (64-bit). The setup installer installs the Microsoft .NET 8 Desktop Runtime automatically when it is not already present.
 
-- Windows 10 version 1607 or later, or Windows 11 (64-bit)
-- Microsoft [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) (x64)
+## Auto-update
 
-The setup installer checks for the runtime and installs it if needed.
+The installed app reads [`update-manifest.json`](update-manifest.json) from this repository on startup (if enabled) and from **Settings → About → Check for updates**.
 
-## After install
+Each manifest entry includes:
 
-Settings and your dock layout live in `%AppData%\DPX.AppDock\`. Uninstalling from Windows Settings removes the program files; you can choose whether to keep that folder.
+- `version` — semver compared to the installed app
+- `downloadUrl` — direct link to the `.zip` update package
+- `sha256` — required hash verified before install
+- `releaseNotes` — shown in the update dialog
 
-Updates can be checked from the app (Settings → About, or the tray menu). This repo’s `update-manifest.json` is what the app reads to know when a newer build is available.
+Manifest URL (configured in the app):  
+`https://raw.githubusercontent.com/0xDPX/dpx-appdock-releases/main/update-manifest.json`
 
-## Links
+## Version 1.0.0
 
-- Product page: [dpx-labs.com/appdock](https://dpx-labs.com/appdock)
-- Releases: [github.com/0xDPX/dpx-appdock-releases/releases](https://github.com/0xDPX/dpx-appdock-releases/releases)
+First public release. Highlights:
 
-Questions or feedback: reach out through [DPX Labs](https://dpx-labs.com/).
+- Compact matte dock for apps, folders, files, and websites
+- Groups with expandable dock bar, drag-and-drop organization
+- Auto-hide, per-monitor placement, global hotkeys, running indicators
+- In-app updates with SHA-256 verification
+- Settings backup/import and a multi-page welcome guide
+
+Full release notes are included in each [GitHub Release](https://github.com/0xDPX/dpx-appdock-releases/releases) description.
+
+## Maintainers
+
+Publish a new version from the private source repo:
+
+```powershell
+.\scripts\Publish-Release.ps1 -Version 1.0.0
+$env:GITHUB_TOKEN = "<token with write access to this repo>"
+.\scripts\Publish-UpdateFeed.ps1 -Version 1.0.0 -ReleaseNotes "See release notes."
+```
+
+See the private source repo’s `releases/RELEASE.md` for the full publish workflow.
