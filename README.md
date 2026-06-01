@@ -1,8 +1,8 @@
 # DPX AppDock releases
 
-Public update feed for **DPX AppDock** (source code is maintained in a private repository).
+Official download and auto-update feed for **DPX AppDock** on Windows.
 
-This repo contains **no application source code** — only installers, update packages, and the manifest the app checks for new versions.
+This repository hosts installers, in-app update packages, and the manifest the app checks for new versions.
 
 ## Download
 
@@ -38,15 +38,3 @@ First public release. Highlights:
 - Settings backup/import and a multi-page welcome guide
 
 Full release notes are included in each [GitHub Release](https://github.com/0xDPX/dpx-appdock-releases/releases) description.
-
-## Maintainers
-
-Publish a new version from the private source repo:
-
-```powershell
-.\scripts\Publish-Release.ps1 -Version 1.0.0
-$env:GITHUB_TOKEN = "<token with write access to this repo>"
-.\scripts\Publish-UpdateFeed.ps1 -Version 1.0.0 -ReleaseNotes "See release notes."
-```
-
-See the private source repo’s `releases/RELEASE.md` for the full publish workflow.
