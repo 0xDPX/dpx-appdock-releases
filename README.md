@@ -29,12 +29,12 @@ Manifest URL (configured in the app):
 
 ## Version 1.0.0
 
-First public release. Highlights:
+First public release (1.0.0). Highlights:
 
 - Compact matte dock for apps, folders, files, and websites
-- Groups with expandable dock bar, drag-and-drop organization
-- Auto-hide, per-monitor placement, global hotkeys, running indicators
+- Groups with expandable dock bar (centered on the group icon), folder badge, and drag-and-drop organization
+- Along-edge dock placement (0–100%), auto-hide, per-monitor profiles, global hotkeys, running indicators
+- Settings and dialogs positioned clear of the dock; backup/import and a multi-page welcome guide
 - In-app updates with SHA-256 verification
-- Settings backup/import and a multi-page welcome guide
 
 Full release notes are included in each [GitHub Release](https://github.com/0xDPX/dpx-appdock-releases/releases) description.
