@@ -1,9 +1,9 @@
 {
-    "version":  "1.0.2",
+    "version":  "1.0.3",
     "releaseDate":  "2026-06-02",
-    "releaseNotes":  "# DPX AppDock 1.0.2\r\n\r\nRelease date: 2026-05-31\r\n\r\nUpdater reliability and settings polish.\r\n\r\n## In-app updates\r\n\r\n- Update progress window can be **closed** (no longer stuck at 100%)\r\n- Update errors appear **on top** of the progress UI\r\n- Safer download/extract when a previous update package is still locked\r\n- **Skipped updates:** checking again shows **Update now** instead of an info-only message\r\n- **Install version X now** in Settings \u003e About and the update banner\r\n\r\n## UI\r\n\r\n- Dock **context menu separator** aligned across the full menu width\r\n\r\n## Install \u0026 update\r\n\r\n- **Setup:** `DPX.AppDock-1.0.2-setup.exe`\r\n- **In-app update package:** `DPX.AppDock-1.0.2-win-x64.zip`\r\n- Publish instructions: [RELEASE.md](RELEASE.md)\r\n",
-    "downloadUrl":  "https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.2/DPX.AppDock-1.0.2-win-x64.zip",
+    "releaseNotes":  "# DPX AppDock 1.0.3\r\n\r\nRelease date: 2026-06-02\r\n\r\nFixes in-app update reliability on Windows.\r\n\r\n## In-app updates\r\n\r\n- Update UI stays responsive during download and extract (close and drag work)\r\n- Progress window is dismissed before error dialogs appear\r\n- Unique download filenames and retries when the update zip is locked by antivirus\r\n- Copies the package before extract to avoid file-in-use errors\r\n\r\n## Install \u0026 update\r\n\r\n- **Setup:** `DPX.AppDock-1.0.3-setup.exe`\r\n- **In-app update package:** `DPX.AppDock-1.0.3-win-x64.zip`\r\n",
+    "downloadUrl":  "https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.3/DPX.AppDock-1.0.3-win-x64.zip",
     "mandatory":  false,
-    "sha256":  "d5993ba4a5442e5d3c4f76b4abd67dea8186688fc9d6308288a42bdafea6b19b"
+    "sha256":  "cd0572ca92c8b949fda947cd7260eeb1212ce6caad4e86ddbd9fee0c2984cb43"
 }
 
