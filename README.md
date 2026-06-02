@@ -8,8 +8,8 @@ This repository hosts installers, in-app update packages, and the manifest the a
 
 | File | Purpose |
 | --- | --- |
-| [DPX.AppDock-1.0.1-setup.exe](https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.1/DPX.AppDock-1.0.1-setup.exe) | First-time install (Windows 10/11, x64) |
-| [DPX.AppDock-1.0.1-win-x64.zip](https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.1/DPX.AppDock-1.0.1-win-x64.zip) | In-app update package (used by existing installs) |
+| [DPX.AppDock-1.0.2-setup.exe](https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.2/DPX.AppDock-1.0.2-setup.exe) | First-time install (Windows 10/11, x64) |
+| [DPX.AppDock-1.0.2-win-x64.zip](https://github.com/0xDPX/dpx-appdock-releases/releases/download/v1.0.2/DPX.AppDock-1.0.2-win-x64.zip) | In-app update package (used by existing installs) |
 
 **Requirements:** Windows 10 or 11 (64-bit). The setup installer installs the Microsoft .NET 8 Desktop Runtime automatically when it is not already present.
 
@@ -27,8 +27,8 @@ Each manifest entry includes:
 Manifest URL (configured in the app):  
 `https://raw.githubusercontent.com/0xDPX/dpx-appdock-releases/main/update-manifest.json`
 
-## Version 1.0.1
+## Version 1.0.2
 
-Group dock polish: centered expand panel, in-group reorder animations, stable panel during drags, Explorer drops onto groups, along-edge placement, and dialogs positioned beside the dock.
+In-app updater fixes (closable progress, clearer errors), re-prompt for skipped updates, **Install now** in Settings, and context menu separator alignment.
 
 Full release notes are included in each [GitHub Release](https://github.com/0xDPX/dpx-appdock-releases/releases) description.
